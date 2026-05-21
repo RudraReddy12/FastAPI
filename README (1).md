@@ -1,10 +1,10 @@
-# 📄 FastAPI Financial Document Management with Semantic Analysis
+#  FastAPI Financial Document Management with Semantic Analysis
 
 A FastAPI application for managing financial documents with AI-powered semantic search using RAG (Retrieval-Augmented Generation).
 
 ---
 
-## 🧰 Tech Stack
+##  Tech Stack
 
 | Layer | Technology |
 |---|---|
@@ -17,72 +17,36 @@ A FastAPI application for managing financial documents with AI-powered semantic 
 
 ---
 
-## 🚀 Features
+##  Features
 
-- 📁 Upload, manage, and retrieve financial documents
-- 🔐 JWT-based authentication with Role-Based Access Control (RBAC)
-- 🧠 AI-powered semantic search using embeddings
-- 📊 ChromaDB vector store for document embeddings
-- 🔁 Reranking pipeline for improved retrieval accuracy
+-  Upload, manage, and retrieve financial documents
+-  JWT-based authentication with Role-Based Access Control (RBAC)
+-  AI-powered semantic search using embeddings
+-  ChromaDB vector store for document embeddings
+-  Reranking pipeline for improved retrieval accuracy
 
----
-
-## 📁 Project Structure
-
-```
-financial-doc-management/
-│
-├── app/
-│   ├── main.py
-│   ├── database.py
-│   ├── models/
-│   │   ├── user.py
-│   │   ├── document.py
-│   │   └── role.py
-│   ├── routers/
-│   │   ├── auth.py
-│   │   ├── documents.py
-│   │   ├── roles.py
-│   │   ├── users.py
-│   │   └── rag.py
-│   ├── schemas/
-│   ├── services/
-│   │   ├── rag_service.py
-│   │   └── embedding_service.py
-│   └── utils/
-│       ├── jwt.py
-│       └── permissions.py
-│
-├── requirements.txt
-├── .env
-└── README.md
-```
 
 ---
 
 ## ⚙️ Setup & Installation
 
-### 1. Clone the repository
 
-```bash
-git clone https://github.com/your-username/financial-doc-management.git
-cd financial-doc-management
 ```
 
-### 2. Create a virtual environment
+### 1. Create a virtual environment
 
 ```bash
 python -m venv venv
 source venv/bin/activate        # On Windows: venv\Scripts\activate
 ```
 
-### 3. Install dependencies
+### 2. Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4. Configure environment variables
+### 3. Configure environment variables
 
 Create a `.env` file in the root directory:
 
@@ -94,13 +58,13 @@ ACCESS_TOKEN_EXPIRE_MINUTES=30
 CHROMA_PERSIST_DIRECTORY=./chroma_db
 ```
 
-### 5. Run database migrations
+### 4. Run database migrations
 
 ```bash
 alembic upgrade head
 ```
 
-### 6. Start the application
+### 5. Start the application
 
 ```bash
 uvicorn app.main:app --reload
@@ -120,7 +84,7 @@ Swagger docs: `http://localhost:8000/docs`
 
 ---
 
-## 📄 Document APIs
+##  Document APIs
 
 | Method | Endpoint | Description |
 |---|---|---|
@@ -147,7 +111,7 @@ Swagger docs: `http://localhost:8000/docs`
 
 ---
 
-## 👥 Role & User Management APIs
+##  Role & User Management APIs
 
 | Method | Endpoint | Description |
 |---|---|---|
@@ -167,7 +131,7 @@ Swagger docs: `http://localhost:8000/docs`
 
 ---
 
-## 🧠 RAG (Retrieval-Augmented Generation) APIs
+##  RAG (Retrieval-Augmented Generation) APIs
 
 | Method | Endpoint | Description |
 |---|---|---|
@@ -204,7 +168,7 @@ Content-Type: application/json
 
 ---
 
-## 🔁 RAG Pipeline
+##  RAG Pipeline
 
 ### Document Indexing Pipeline
 
@@ -238,7 +202,7 @@ Top 5 Most Relevant Results
 
 ---
 
-## 🗄️ Database Schema Overview
+##  Database Schema Overview
 
 **Users Table**
 ```
@@ -260,7 +224,7 @@ user_roles (user_id, role_id)
 
 ---
 
-## 📦 Requirements
+##  Requirements
 
 ```txt
 fastapi
@@ -277,16 +241,6 @@ sentence-transformers
 pydantic
 python-dotenv
 ```
-
----
-
-## 📜 License
-
-This project is created as part of the **Nimap AI & ML Assignment**.
-
----
-
-## 🙌 Author
 
 **Your Name**  
 [GitHub](https://github.com/your-username) · [LinkedIn](https://linkedin.com/in/your-profile)
